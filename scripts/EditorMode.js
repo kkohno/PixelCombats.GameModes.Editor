@@ -1,5 +1,5 @@
 // разрешения
-//var test;
+var test;
 Damage.FriendlyFire = false;
 BreackGraph.OnlyPlayerBlocksDmg = false;
 BreackGraph.WeakBlocks = true;
