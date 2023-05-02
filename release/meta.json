@@ -1,0 +1,21 @@
+{
+    "Name": "EDITOR",
+    "DisplayName": "GameModes/EDITOR",
+    "FileName": "EditorMode_5.js",
+    "Version": 1,
+    "StartClientVersion": 334,
+    "Parameters": {
+      "Bool": [
+        {
+          "Name": "RedTeam",
+          "DisplayName": "Teams/Red",
+          "Default": true
+        },
+        {
+          "Name": "BlueTeam",
+          "DisplayName": "Teams/Blue",
+          "Default": true
+        }
+      ]
+    }
+  }
