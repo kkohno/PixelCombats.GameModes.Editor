@@ -1,8 +1,6 @@
 {
-    "Name": "EDITOR",
-    "DisplayName": "GameModes/EDITOR",
-    "FileName": "EditorMode_5.js",
-    "Version": 1,
+    "Name": "GameModes/EDITOR",
+    "Description": "Создавайте собственные карты в одиночку или с друзьями",
     "StartClientVersion": 334,
     "Parameters": {
       "Bool": [
