@@ -2,6 +2,9 @@
     "Name": "GameModes/EDITOR",
     "Description": "Создавайте собственные карты в одиночку или с друзьями",
     "StartClientVersion": 334,
+    "MapFilter": {
+      "IsBlank": true
+    },
     "Parameters": {
       "Bool": [
         {
