@@ -2,6 +2,12 @@
     "Name": "EDITOR",
     "Description": "Редактор карт. Создавайте собственные карты в одиночку или с друзьями",
     "StartClientVersion": 334,
+    "MapLists": [
+      {
+        "MapListId": 8401,
+        "Name": "Заготовки"
+      }
+    ]
     "Parameters": {
       "Bool": [
         {
