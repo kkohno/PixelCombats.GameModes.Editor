@@ -5,7 +5,7 @@
     "ApiVersion": 2,
     "MapLists": [
       {
-        "MapListId": 8401,
+        "MapListId__": 8401,
         "Name": "Заготовки"
       }
     ],
