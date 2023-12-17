@@ -37,11 +37,11 @@ export function set_editor_options() {
 }
 
 export function create_team_red() {
-    Teams.Add("Red", "Teams/Red", { r: 1 });
+    Teams.Add("Red", "Teams/Red", new Color(1, 0, 0, 0));
     Teams.Get("Red").Spawns.SpawnPointsGroups.Add(2);
 }
 
 export function create_team_blue() {
-    Teams.Add("Blue", "Teams/Blue", { b: 1 });
+    Teams.Add("Blue", "Teams/Blue", new Color(0, 0, 1, 0));
     Teams.Get("Blue").Spawns.SpawnPointsGroups.Add(1);
 }
