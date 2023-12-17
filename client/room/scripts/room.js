@@ -12,7 +12,7 @@ Ui.GetContext().QuadsCount.Value = true;
 // разрешаем все чистые блоки
 Build.GetContext().BlocksSet.Value = BuildBlocksSet.AllClear;
 // вкл строительные опции
-set_editor_options();
+peace.set_editor_options();
 
 // запрет нанесения урона
 Damage.GetContext().DamageOut.Value = false;
