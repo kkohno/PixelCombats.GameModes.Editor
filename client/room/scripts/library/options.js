@@ -1,10 +1,3 @@
-/*module.exports = {
-    set_editor_options,
-    set_editor_inventory,
-    create_team_red,
-    create_team_blue
-};*/
-
 // разрешаем все что можно для редактора
 export function set_editor_inventory() {
     var roomInventory = Inventory.GetContext();
