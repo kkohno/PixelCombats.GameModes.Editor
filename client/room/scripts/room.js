@@ -1,7 +1,6 @@
 import * as peace from './library/options.js';
 
 // разрешения
-var test;
 Damage.FriendlyFire = false;
 BreackGraph.OnlyPlayerBlocksDmg = false;
 BreackGraph.WeakBlocks = true;
