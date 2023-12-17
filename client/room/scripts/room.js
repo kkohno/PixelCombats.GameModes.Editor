@@ -33,7 +33,7 @@ if (blue || !red && !blue) {
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
 Teams.OnPlayerChangeTeam.add_Event(function (player) {	
-	player.Spawns.SpawnDefault();
+	player.Spawns.Spawn();
 });
 
 // задаем подсказку
