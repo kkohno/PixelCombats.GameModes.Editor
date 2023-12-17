@@ -23,10 +23,10 @@ Properties.GetContext().GameModeName.Value = "GameModes/EDITOR";
 red = GameMode.Parameters.GetBool("RedTeam");
 blue = GameMode.Parameters.GetBool("BlueTeam");
 if (red || !red && !blue) {
-	create_team_red();
+	peace.create_team_red();
 }
 if (blue || !red && !blue) {
-	create_team_blue();
+	peace.create_team_blue();
 }
 
 // разрешаем вход в команды по запросу
