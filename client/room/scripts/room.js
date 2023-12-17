@@ -32,7 +32,7 @@ if (blue || !red && !blue) {
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
-Teams.OnPlayerChangeTeam.add_Event(function (player) {
+Teams.OnPlayerChangeTeam.add_Event(function (player, teams) {
 	player.Spawns.Spawn();
 });
 
