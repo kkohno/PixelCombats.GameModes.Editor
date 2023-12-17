@@ -38,7 +38,7 @@ Teams.OnPlayerChangeTeam.Add(function(player){ player.Spawns.Spawn()});
 Ui.getContext().Hint.Value = "Hint/BuildBase";
 
 // конфигурация инвентаря
-set_editor_inventory();
+peace.set_editor_inventory();
 
 // моментальный спавн
 Spawns.GetContext().RespawnTime.Value = 0;
