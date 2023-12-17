@@ -20,8 +20,8 @@ Damage.GetContext().DamageOut.Value = false;
 // параметры игры
 Properties.GetContext().GameModeName.Value = "GameModes/EDITOR";
 // создаем команды
-red = GameMode.Parameters.GetBool("RedTeam");
-blue = GameMode.Parameters.GetBool("BlueTeam");
+var red = GameMode.Parameters.GetBool("RedTeam");
+var blue = GameMode.Parameters.GetBool("BlueTeam");
 if (red || !red && !blue) {
 	peace.create_team_red();
 }
