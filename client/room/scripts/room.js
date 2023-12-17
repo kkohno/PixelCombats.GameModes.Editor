@@ -21,12 +21,8 @@ Properties.GetContext().GameModeName.Value = "GameModes/EDITOR";
 // создаем команды
 var red = GameMode.Parameters.GetBool("RedTeam");
 var blue = GameMode.Parameters.GetBool("BlueTeam");
-if (red || !red && !blue) {
-	peace.create_team_red();
-}
-if (blue || !red && !blue) {
-	peace.create_team_blue();
-}
+if (red || !red && !blue) peace.create_team_red();
+if (blue || !red && !blue) peace.create_team_blue();
 
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
