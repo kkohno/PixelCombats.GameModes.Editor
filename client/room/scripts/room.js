@@ -30,9 +30,9 @@ if (blue || !red && !blue) {
 }
 
 // разрешаем вход в команды по запросу
-Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);});
+Teams.OnRequestJoinTeam.add_Event(function(player,team){team.Add(player);});
 // спавн по входу в команду
-Teams.OnPlayerChangeTeam.Add(function(player){ player.Spawns.Spawn()});
+Teams.OnPlayerChangeTeam.add_Event(function(player){ player.Spawns.Spawn()});
 
 // задаем подсказку
 Ui.getContext().Hint.Value = "Hint/BuildBase";
