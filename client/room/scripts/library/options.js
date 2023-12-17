@@ -1,12 +1,12 @@
-module.exports = {
+/*module.exports = {
     set_editor_options,
     set_editor_inventory,
     create_team_red,
     create_team_blue
-};
+};*/
 
 // разрешаем все что можно для редактора
-function set_editor_inventory() {
+export function set_editor_inventory() {
     var roomInventory = Inventory.GetContext();
     roomInventory.Main.Value = false;
     roomInventory.Secondary.Value = false;
@@ -16,7 +16,7 @@ function set_editor_inventory() {
     roomInventory.BuildInfinity.Value = true;
 }
 
-function set_editor_options() {
+export function set_editor_options() {
     Build.GetContext().Pipette.Value = true;
     Build.GetContext().FloodFill.Value = true;
     Build.GetContext().FillQuad.Value = true;
@@ -36,12 +36,12 @@ function set_editor_options() {
     Build.GetContext().BuildRangeEnable.Value = true;
 }
 
-function create_team_red() {
+export function create_team_red() {
     Teams.Add("Red", "Teams/Red", { r: 1 });
     Teams.Get("Red").Spawns.SpawnPointsGroups.Add(2);
 }
 
-function create_team_blue() {
+export function create_team_blue() {
     Teams.Add("Blue", "Teams/Blue", { b: 1 });
     Teams.Get("Blue").Spawns.SpawnPointsGroups.Add(1);
 }
