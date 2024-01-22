@@ -1,23 +1,24 @@
+import * as room from 'pixel_combats/room';
 import * as peace from './library/options.js';
 
 // разрешения
-Damage.FriendlyFire = false;
-BreackGraph.OnlyPlayerBlocksDmg = false;
-BreackGraph.WeakBlocks = true;
+room.Damage.FriendlyFire = false;
+room.BreackGraph.OnlyPlayerBlocksDmg = false;
+room.BreackGraph.WeakBlocks = true;
 // делаем возможным ломать все блоки
-BreackGraph.BreackAll = true;
+room.BreackGraph.BreackAll = true;
 // показываем количество квадов
-Ui.GetContext().QuadsCount.Value = true;
+room.Ui.GetContext().QuadsCount.Value = true;
 // разрешаем все чистые блоки
-Build.GetContext().BlocksSet.Value = BuildBlocksSet.AllClear;
+room.Build.GetContext().BlocksSet.Value = BuildBlocksSet.AllClear;
 // вкл строительные опции
 peace.set_editor_options();
 
 // запрет нанесения урона
-Damage.GetContext().DamageOut.Value = false;
+room.Damage.GetContext().DamageOut.Value = false;
 
 // параметры игры
-Properties.GetContext().GameModeName.Value = "GameModes/EDITOR";
+room.Properties.GetContext().GameModeName.Value = "GameModes/EDITOR";
 // создаем команды
 var red = GameMode.Parameters.GetBool("RedTeam");
 var blue = GameMode.Parameters.GetBool("BlueTeam");
@@ -25,15 +26,15 @@ if (red || !red && !blue) peace.create_team_red();
 if (blue || !red && !blue) peace.create_team_blue();
 
 // разрешаем вход в команды по запросу
-Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
+room.Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
 // спавн по входу в команду
-Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); });
+room.Teams.OnPlayerChangeTeam.add_Event(function (player) { player.Spawns.Spawn(); });
 
 // задаем подсказку
-Ui.getContext().Hint.Value = "Hint/BuildBase";
+room.Ui.getContext().Hint.Value = "Hint/BuildBase";
 
 // конфигурация инвентаря
 peace.set_editor_inventory();
 
 // моментальный спавн
-Spawns.GetContext().RespawnTime.Value = 0;
+room.Spawns.GetContext().RespawnTime.Value = 0;
