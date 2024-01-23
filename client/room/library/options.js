@@ -1,3 +1,5 @@
+import { Build, Inventory, Teams } from 'pixel_combats/room';
+
 // разрешаем все что можно для редактора
 export function set_editor_inventory() {
     var roomInventory = Inventory.GetContext();
