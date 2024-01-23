@@ -10,7 +10,7 @@ room.BreackGraph.BreackAll = true;
 // показываем количество квадов
 room.Ui.GetContext().QuadsCount.Value = true;
 // разрешаем все чистые блоки
-room.Build.GetContext().BlocksSet.Value = BuildBlocksSet.AllClear;
+room.Build.GetContext().BlocksSet.Value = room.BuildBlocksSet.AllClear;
 // вкл строительные опции
 peace.set_editor_options();
 
