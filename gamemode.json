@@ -1,5 +1,5 @@
 {
-    "Name": "EDITOR_API_2.0",
+    "Name": "EDITOR (API 2.0)",
     "Description": "Редактор карт. Создавайте собственные карты в одиночку или с друзьями",
     "StartClientVersion": 334,
     "ApiVersion": 2,
