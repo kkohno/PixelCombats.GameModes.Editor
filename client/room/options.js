@@ -1,4 +1,4 @@
-import { Build, Inventory, Teams } from 'pixel_combats/room';
+import { Build, Inventory } from 'pixel_combats/room';
 
 // разрешаем все что можно для редактора
 export function set_editor_inventory() {
@@ -29,14 +29,4 @@ export function set_editor_options() {
     Build.GetContext().LoadMapEnable.Value = true;
     Build.GetContext().ChangeSpawnsEnable.Value = true;
     Build.GetContext().BuildRangeEnable.Value = true;
-}
-
-export function create_team_red() {
-    Teams.Add("Red", "Teams/Red", new Color(1, 0, 0, 0));
-    Teams.Get("Red").Spawns.SpawnPointsGroups.Add(2);
-}
-
-export function create_team_blue() {
-    Teams.Add("Blue", "Teams/Blue", new Color(0, 0, 1, 0));
-    Teams.Get("Blue").Spawns.SpawnPointsGroups.Add(1);
 }

@@ -1,5 +1,6 @@
 import { Build, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns } from 'pixel_combats/room';
-import * as peace from './library/options.js';
+import * as peace from './options.js';
+import * as teams from './default_teams.js';
 
 // разрешения
 Damage.FriendlyFire = false;
@@ -22,8 +23,8 @@ Properties.GetContext().GameModeName.Value = "GameModes/EDITOR";
 // создаем команды
 var red = GameMode.Parameters.GetBool("RedTeam");
 var blue = GameMode.Parameters.GetBool("BlueTeam");
-if (red || !red && !blue) peace.create_team_red();
-if (blue || !red && !blue) peace.create_team_blue();
+if (red || !red && !blue) teams.create_team_red();
+if (blue || !red && !blue) teams.create_team_blue();
 
 // разрешаем вход в команды по запросу
 Teams.OnRequestJoinTeam.add_Event(function (player, team) { team.Add(player); });
