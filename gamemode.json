@@ -1,7 +1,8 @@
 {
-    "Name": "EDITOR",
+    "Name": "EDITOR (API 2.0)",
     "Description": "Редактор карт. Создавайте собственные карты в одиночку или с друзьями",
     "StartClientVersion": 334,
+    "ApiVersion": 2,
     "MapLists": [
       {
         "MapListId": 8401,
