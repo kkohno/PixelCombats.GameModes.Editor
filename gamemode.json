@@ -3,7 +3,6 @@
     "Description": "Редактор карт. Создавайте собственные карты в одиночку или с друзьями",
     "StartClientVersion": 334,
     "ApiVersion": 2,
-    "PopupsEnabled": true,
     "MapLists": [
       {
         "MapListId": 8401,
